@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  * {
+    margin: 0;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      interpolate-size: allow-keywords;
+    }
+  }
+  body {
+     
+    background:linear-gradient(to top,
+    #111419 0%,   /* Color inicial */
+    #12161B 25%,  /* Transición suave al siguiente color */
+    var(--background-color) 50%,  /* Color intermedio */
+    #23272C 75%,  /* Transición suave al siguiente color */
+    #111419 100%
+    ) ;
+
+    color:var(--text-color);
+    font-family: "Varela Round", sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.5;
+   
+    -webkit-font-smoothing: antialiased;
+  }
+
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+
+  input, button, textarea, select {
+    font: inherit;
+  }
+
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+ 
+  #root, #__next {
+    isolation: isolate;
+  }
+
+
+  html, body {
+    height: 100%; 
+    margin: 0;   
+    padding: 0;  
+    overflow: hidden; 
+}
+
+:root{
+    --background-color:#1B1F24;
+    --card-fill: #202328;
+    --text-color:rgb(211, 211, 211);
+    --shadow-color:#16191D;
+    --custom-shadow: 0 0.5rem 0.7rem var(--shadow-color);
+    --default-key: to top , #FBBF54, #D91D04;
+    --A-Key: to top , #0B5E41, #15C286;
+    --R-Key: to top , #bdd106, #79831e;
+    --S-Key: to top , #EC0F47, #4B1E2E;
+    --D-Key: to top , #8F1500, #EE6B3B;
+    --F-Key: to top , #0F5F07, #ABD96D;
+    --W-Key: to top , #13103A, #A02C5D;
+    --V-Key: to top , #0CDBC3, #087353;
+    
+}  
+
+
+.container> *{
+    background-color: var(--card-fill);
+    border-radius: 1.3rem;
+    box-shadow: var(--custom-shadow);
+   
+}
+
+.container{
+    display:grid;
+    gap: 3em;
+    margin: 3.4em;
+    grid-template-columns: repeat( 2, 1fr);
+    grid-template-rows:repeat( 2, 1fr); 
+    height: 70vh; 
+}
+
+h1 {
+    font-family: "Montserrat",system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.3rem;
+    color: white;
+
+  }
+
+ul{
+    list-style:none;
+    padding: 0;
+    margin: 0;
+}
+
+.visualizer{
+  grid-row: 1/3;
+  grid-template-rows:  minmax(100px, 70vh);  
+}
+
+.wrapup>*:first-of-type{
+  margin-top: 3em;
+  margin-left: 3em;
+}
+
+
+.repertoire > div:first-of-type{
+  display: flex;
+  flex-direction:column;
+  margin:1.2em;
+  gap:.2em;
+  justify-content: flex-start ;
+  flex: 1 0 auto;
+}
+
+.instructions >div:first-of-type{
+  display: grid ;
+  gap:1rem;
+  grid-template-columns: repeat(3,1fr);
+  justify-items:center;
+  align-items: baseline;
+  
+}
+
+.instructions > div:first-of-type img {
+  margin: 0 auto; 
+}
+
+.instructions{
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+padding: 1.2em;
+}
+
