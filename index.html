@@ -11,44 +11,55 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.49/Tone.js"></script>
   </head>
-
-  <div class="wrapup">
-    <div>
-      <img src="Group.svg" alt="Otomatone" />
-    </div>
-    <div class="container">
-      <section class="visualizer">
-        <h1></h1>
-      </section>
-      <section class="instructions">
-        
-          <h1>Mode:</h1>
+<body>
+  <script src="mechanics.js"></script>
+  
+    <div class="wrapup">
+      <div>
+        <img src="Group.svg" alt="Otomatone" />
+      </div>
+      <div class="container">
+        <section class="visualizer">
+          <h1></h1>
+        </section>
+        <section class="instructions">
+  
+            <div class="mode-container">
+              <h1>Mode:</h1>
+                <select name="mode" id="mode">
+                  <option value="Freestyle" selected>Freestyle</option>
+                  <option value="Tutorial">Tutorial</option>
+                  <option value="Keyed">Keyed Mode</option>
+                </select>
+            </div>
+            <div>
+            <div class="paragraph">
+              <img src="Space.svg" alt="Space" class="spaceicon" />
+              <p>Press to play</p>
+            </div>
+            <div class="paragraph">
+              <img src="Arrowup.svg" alt="Up" class="arrowup" />
+              <p>Raise pitch</p>
+            </div>
+            <div class="paragraph">
+              <img src="Arrowdown.svg" alt="Down" class="arrowdown" />
+              <p>Lower pitch</p>
+            </div>
+          </div>
+        </section>
+        <section class="repertoire">
           <div>
-          <div class="paragraph">
-            <img src="Space.svg" alt="Space" class="spaceicon" />
-            <p>Press to play</p>
+            <h1>Practice Tracks</h1>
+            <ul>
+              <li>Twinkle Twinkle Little Star</li>
+              <li>Happy Birthday Song</li>
+              <li>Star wars Theme</li>
+            </ul>
           </div>
-          <div class="paragraph">
-            <img src="Arrowup.svg" alt="Up" class="arrowup" />
-            <p>Raise pitch</p>
-          </div>
-          <div class="paragraph">
-            <img src="Arrowdown.svg" alt="Down" class="arrowdown" />
-            <p>Lower pitch</p>
-          </div>
-        </div>
-      </section>
-      <section class="repertoire">
-        <div>
-          <h1>Practice Tracks</h1>
-          <ul>
-            <li>Twinkle Twinkle Little Star</li>
-            <li>Happy Birthday Song</li>
-            <li>Star wars Theme</li>
-          </ul>
-        </div>
-      </section>
-  </div>
-  </div>
+        </section>
+    </div>
+    </div>
+</body>
 </html>

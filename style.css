@@ -131,7 +131,7 @@ ul{
   flex: 1 0 auto;
 }
 
-.instructions >div:first-of-type{
+.instructions >div:nth-of-type(2){
   display: grid ;
   gap:1rem;
   grid-template-columns: repeat(3,1fr);
@@ -140,7 +140,7 @@ ul{
   
 }
 
-.instructions > div:first-of-type img {
+.instructions > div:nth-of-type(2) img {
   margin: 0 auto; 
 }
 
@@ -150,4 +150,7 @@ ul{
   gap: 0.3rem;
 padding: 1.2em;
 }
+
+.mode-container{
+  display: flex;}
 
